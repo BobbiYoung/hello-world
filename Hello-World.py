@@ -1,9 +1,17 @@
-#This section prints Hello, world! in Python
+import random
 
-print("Hello, world!")
+#Used https://replit.com/languages/python3 to write and test 
 
-#This section prints defined strings
+#print out Hello, World!
+print("Hello, world! \n")
+
 greeting = "Hello, world!"
 status = "just getting started here"
 who = "I'm"
-print(greeting, who, status)
+projects = ["Python coding", "Java coding", "Dog training", "Remodel my basement", "Finish Masters degree", "Binge all of Netflix"]
+
+#print out greeting and current status
+print(greeting, who, status + ". \n")
+
+#print out a random project from projects array
+print("Other projects", who, "working on:", random.choice(projects))
