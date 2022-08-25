@@ -9,9 +9,11 @@ greeting = "Hello, world!"
 status = "just getting started here"
 who = "I'm"
 projects = ["Python coding", "Java coding", "Dog training", "Remodel my basement", "Finish Masters degree", "Binge all of Netflix"]
+num = random.randrange(1,260,2)
 
 #print out greeting and current status
 print(greeting, who, status + ". \n")
 
 #print out a random project from projects array
 print("Other projects", who, "working on:", random.choice(projects))
+print("And", num, "more...")
