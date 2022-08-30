@@ -16,6 +16,7 @@ num = random.randrange(1,260,2)
 print(greeting, who, status + ". \n")
 
 #Print out a random project from projects array
+print("*** Let's print out some random projects and numbers.\n")
 print("Other projects", who, "working on:", random.choice(projects))
 print("And", num, "more... \n")
 
@@ -27,10 +28,21 @@ def favnumber():
 #Define first function
 def primary():
   colors = ["~green~", "*purple*", "-blue-", "+red+"]
-  print("Let's call a function.\n")
+  print("*** Let's call a function.\n")
   print("My favorite color right now is", random.choice(colors), "\nAnd my favorite number is", end=' ') 
   #Call second function in the first function
   favnumber()
  
 #Call first function
 primary()
+
+#Create and print name input option
+print ("\n*** Let's practice some inputs. I want to know about you... \n")
+usrName = input("What is your name?: ")
+print("Hello, " + usrName + "\n")
+
+#Create and print two number sum
+usrNum1 = int(input("Type one number: "))
+usrNum2 = int(input("Now type another number: "))
+addition = usrNum1 + usrNum2
+print("\nAwesome!", usrNum1, "+", usrNum2, "is {} " .format(addition))
